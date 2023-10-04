@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0D624817-A154-459B-8B34-66D77DDEB771"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DEC6776-0EEE-4C43-A2AE-6329502D477F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBLoginViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-loginButtonPressed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE1F6A24-332E-4E5A-943C-55980187C3EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBWebViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "-init_Webview"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62ED06FC-A229-4333-8E14-1814623229A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBWebViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "369"
+            endingLineNumber = "369"
+            landmarkName = "-userContentController:didReceiveScriptMessage:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DF44C3B-B0D8-4395-8A35-F7D9DAC5A5CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBWebViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
+            landmarkName = "-iosBridge_goToLogout"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DF44C3B-B0D8-4395-8A35-F7D9DAC5A5CE - 5fe8813ba418a2a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBWebViewController iosBridge_goToLogout]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBWebViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "331"
+                  endingLineNumber = "331"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "2DF44C3B-B0D8-4395-8A35-F7D9DAC5A5CE - 5fe8813ba418a287"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBWebViewController iosBridge_goToLogout]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBWebViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "330"
+                  endingLineNumber = "330"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECC7C989-9BAE-4052-96E0-081922922E45"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBWebViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "-setDelegate:selector:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ECC7C989-9BAE-4052-96E0-081922922E45 - 72562e406abcd889"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBWebViewController setDelegate:selector:]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBWebViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "263"
+                  endingLineNumber = "263"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "ECC7C989-9BAE-4052-96E0-081922922E45 - 72562e406abcd889"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBWebViewController setDelegate:selector:]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBWebViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "263"
+                  endingLineNumber = "263"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51D14E86-8D99-4D58-8EBC-0FEB3057E2D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBWebViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "-iosBridge_userInfo"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "51D14E86-8D99-4D58-8EBC-0FEB3057E2D6 - d520567c68f1fe77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBWebViewController iosBridge_userInfo]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBWebViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "296"
+                  endingLineNumber = "296"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "51D14E86-8D99-4D58-8EBC-0FEB3057E2D6 - d520567c68f1fe77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBWebViewController iosBridge_userInfo]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBWebViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "296"
+                  endingLineNumber = "296"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "51D14E86-8D99-4D58-8EBC-0FEB3057E2D6 - d520567c68f1fe77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBWebViewController iosBridge_userInfo]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBWebViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "296"
+                  endingLineNumber = "296"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD2D4F1C-A50D-43D5-B0F0-C6FD89B52A6F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBLoginViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "-didReceiveResponse:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CD2D4F1C-A50D-43D5-B0F0-C6FD89B52A6F - 5a69c80305854e7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBLoginViewController didReceiveResponse:]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBLoginViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "1108">
+               </Location>
+               <Location
+                  uuid = "CD2D4F1C-A50D-43D5-B0F0-C6FD89B52A6F - 5a69c80305854e5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBLoginViewController didReceiveResponse:]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBLoginViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "217"
+                  endingLineNumber = "217"
+                  offsetFromSymbolStart = "1088">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC75395A-04A1-48D1-8EF8-D51B8107BC21"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBLoginViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-keepSignIn"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAB81E88-9306-464B-9959-C84D8363B71C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBLoginViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "-didReceiveResponse:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AAB81E88-9306-464B-9959-C84D8363B71C - 5a69c80305854707"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBLoginViewController didReceiveResponse:]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBLoginViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "AAB81E88-9306-464B-9959-C84D8363B71C - 5a69c80305854766"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SBLoginViewController didReceiveResponse:]"
+                  moduleName = "SmartBIMS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyoungsoolee/App/Ws/XCode/Smart%20BIMSHB/Smart%20BIMS/SBLoginViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "163"
+                  endingLineNumber = "163"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE6DB9FE-CF33-4811-AD76-48BFF48D09A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBWebViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
+            landmarkName = "-iosBridge_userInfo"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D03FE56-D629-4D13-9E78-16960FA1B1C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smart BIMS/SBLoginViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-loginButtonPressed:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
