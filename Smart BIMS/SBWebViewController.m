@@ -230,6 +230,9 @@
     
     // MARK: [웹뷰 페이지 로드 수행 실시]
     NSString* url_main_page = URL_MAIN_PAGE;
+    if ( m_SBUserInfoVO.szMgrData != nil ) {
+        url_main_page = URL_MAIN_MGR;
+    }
     NSMutableURLRequest *request = [[NSMutableURLRequest new] autorelease];
     [request setURL:[NSURL URLWithString:url_main_page]];
     [request setHTTPMethod:@"POST"];
@@ -291,6 +294,27 @@
     [self presentViewController:alertController animated:YES completion:^{}];
 }
 
+- (void)iosBridge_bimsSiteSet {
+    NSString* url_main_page = URL_MAIN_PAGE;
+    NSMutableURLRequest *request = [[NSMutableURLRequest new] autorelease];
+    [request setURL:[NSURL URLWithString:url_main_page]];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"IOS" forHTTPHeaderField:@"app-device"];
+#if TARGET==DEV
+    [request setValue:@"DEV" forHTTPHeaderField:@"app-mod"];
+#endif
+
+#if TARGET==PROD
+    [request setValue:@"PROD" forHTTPHeaderField:@"app-mod"];
+#endif
+
+#if TARGET==LOCAL
+    [request setValue:@"LOCAL" forHTTPHeaderField:@"app-mod"];
+#endif
+        
+    [self.main_webview loadRequest:request];
+  }
+
 - (void)iosBridge_userInfo {
     NSString* tempVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
    
@@ -309,6 +333,7 @@
     [dictionary setValue:[NSString stringWithFormat:@"%@", self.m_SBUserInfoVO.szBimsCarcode] forKey:@"bims_carcode"];
     [dictionary setValue:[NSString stringWithFormat:@"%@", self.m_SBUserInfoVO.szBimsCarname] forKey:@"bims_carname"];
     [dictionary setValue:[NSString stringWithFormat:@"%@", self.m_SBUserInfoVO.szBimsDeptorders] forKey:@"bims_deptorders"];
+    [dictionary setValue:[NSString stringWithFormat:@"%@", self.m_SBUserInfoVO.szMgrData] forKey:@"strMgrData"];
     
     NSString* key;
     for (key in dictionary) {
@@ -377,6 +402,23 @@
         
         if ( [msg isEqualToString:@"GoToLogout"] ) {
             [self performSelector:@selector(iosBridge_goToLogout)];
+        }
+        
+        NSRange range = [msg rangeOfString:@"BimsSiteSet:" options:NSRegularExpressionSearch];
+        if (range.length == 12) {
+            NSArray* tempMgrSite = [msg componentsSeparatedByString:@":"];
+            NSInteger code = [[tempMgrSite objectAtIndex:1] intValue];
+            NSArray* tempMgrDataArray = [m_SBUserInfoVO.szMgrData componentsSeparatedByString:@"|"];
+            NSString* tempRowData = [NSString stringWithString:[tempMgrDataArray objectAtIndex:code]];
+            NSArray* tempMgrDetailDataArray = [tempRowData componentsSeparatedByString:@":"];
+            
+            
+            self.m_SBUserInfoVO.szBimsSitecode = [tempMgrDetailDataArray objectAtIndex:0];
+            self.m_SBUserInfoVO.szBimsSitename = [tempMgrDetailDataArray objectAtIndex:1];
+            self.m_SBUserInfoVO.szBimsCarcode = [tempMgrDetailDataArray objectAtIndex:2];
+            self.m_SBUserInfoVO.szBimsCarname = [tempMgrDetailDataArray objectAtIndex:3];
+            
+            [self performSelector:@selector(iosBridge_bimsSiteSet)];
         }
     }
 }

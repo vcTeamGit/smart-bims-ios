@@ -23,6 +23,7 @@
     NSString* szBimsCarcode;
     NSString* szBimsCarname;
     NSString* szBimsDeptorders;
+    NSString* szMgrData;
 }
 
 @property (nonatomic, retain) NSString* szBimsId;
@@ -38,6 +39,7 @@
 @property (nonatomic, retain) NSString* szBimsCarcode;
 @property (nonatomic, retain) NSString* szBimsCarname;
 @property (nonatomic, retain) NSString* szBimsDeptorders;
+@property (nonatomic, retain) NSString* szMgrData;
 
 - (id)initWithSBUserInfo:(SBUserInfoVO*)userInfo;
 

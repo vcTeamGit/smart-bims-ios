@@ -24,6 +24,9 @@
 // 메인 UI URL => [ SBWebViewController.m ]
 #define URL_MAIN_PAGE [NSString stringWithFormat:@"%@%@%@", @"http://", BLOOD_SERVER, @"/sbview/sbmain/sbmain01.jsp"]
 
+// 메인 UI URL => [ SBWebViewController.m ]
+#define URL_MAIN_MGR [NSString stringWithFormat:@"%@%@%@", @"http://", BLOOD_SERVER, @"/sbview/sbmain/sbmainMgr.jsp"]
+
 @interface SBServerURLContent : NSObject
 
 extern NSString *BLOOD_SERVER;

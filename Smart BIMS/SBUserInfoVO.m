@@ -26,6 +26,8 @@
 @synthesize szBimsCarname;
 @synthesize szBimsDeptorders;
 
+@synthesize szMgrData;
+
 - (id)init
 {
     self = [super init];
@@ -56,6 +58,7 @@
         self.szBimsCarcode = userInfo.szBimsCarcode;
         self.szBimsCarname = userInfo.szBimsCarname;
         self.szBimsDeptorders = userInfo.szBimsDeptorders;
+        self.szMgrData = userInfo.szMgrData;
     }
     
     return self;
@@ -76,6 +79,7 @@
     [szBimsCarcode release];
     [szBimsCarname release];
     [szBimsDeptorders release];
+    [szMgrData release];
     
     [super dealloc];
 }

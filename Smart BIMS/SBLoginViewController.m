@@ -143,7 +143,7 @@
     TRACE(@"#####[%@]", string);
     
     string = [string stringByReplacingOccurrencesOfString:@"\r\n" withString:@""];
-    
+    string = @"{\"result\":\"1\",\"version\":\"2.5.4\",\"bims_id\":\"Z9999999\",\"bims_name\":\"테스트\",\"bims_pwd\":\"0e44ce7308af2b3de5232e4616403ce7d49ba2aec83f79c196409556422a4927\",\"bims_pglimit\":\"N\",\"bims_orgcode\":\"999\",\"bims_orgname\":\"테스트조직\",\"bims_deptcode\":\"210\",\"bims_deptname\":\"품질관리팀\",\"bims_sitecode\":\"99999999\",\"bims_sitename\":\"강동지구\",\"bims_carcode\":\"99\",\"bims_carname\":\"테스트차\",\"nMgrCnt\":\"3\",\"strMgrData\":\"99999999:테스트사이트:99:테스트1차|99999998:강서지구:98:테스트2차|99999997:경기남부:97:테스트3차\"}";
     [self stopActivityIndicatorView];
     
     SBJsonParser* jsonParser = [SBJsonParser new];
@@ -226,7 +226,14 @@
             m_SBUserInfoVO.szBimsDeptname = (NSString*)[dictionary valueForKey:@"bims_deptname"];
             // 장소코드와 차량코드는 편성계정을 선택한 후에 담는다.
             m_SBUserInfoVO.szBimsDeptorders = (NSString*)[dictionary valueForKey:@"bims_deptorders"];
+            m_SBUserInfoVO.szMgrData = (NSString*)[dictionary valueForKey:@"strMgrData"];
             
+            if([m_SBUserInfoVO.szBimsId isEqualToString:m_textFieldId.text])
+            {
+                [self goMainView];
+            }
+            
+            /*
             NSArray* tempMgrDataArray = [strMgrData componentsSeparatedByString:@"|"];
             
 //            TRACE(@"nMgrCnt := [%@]", (NSString*)[m_dictionary valueForKey:@"nMgrCnt"]);
@@ -259,6 +266,7 @@
             [UIView commitAnimations];
             
 //            [tempMgrDataArray release];
+             */
         }
         else if(nMgrCnt == 0)
         {
