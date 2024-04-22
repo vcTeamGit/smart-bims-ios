@@ -1395,7 +1395,7 @@
 				TargetAttributes = {
 					92435ECE13EA231900ABADB9 = {
 						LastSwiftMigration = 1200;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1886,9 +1886,11 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2.5.4;
-				DEVELOPMENT_TEAM = HL8H6D3D5M;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8MJ5VDG926;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smart BIMS/SmartBIMS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1897,11 +1899,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = YES;
 				MARKETING_VERSION = 2.5.4;
-				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHB;
+				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHW;
 				PRODUCT_NAME = SmartBIMS;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "smartBIMSHW DEV";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartBIMS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1918,9 +1921,11 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2.5.4;
-				DEVELOPMENT_TEAM = HL8H6D3D5M;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8MJ5VDG926;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smart BIMS/SmartBIMS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1929,11 +1934,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = YES;
 				MARKETING_VERSION = 2.5.4;
-				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHB;
+				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHW;
 				PRODUCT_NAME = SmartBIMS;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "smartBIMSHW DEV";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartBIMS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1974,9 +1980,11 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2.5.4;
-				DEVELOPMENT_TEAM = HL8H6D3D5M;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8MJ5VDG926;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smart BIMS/SmartBIMS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1985,11 +1993,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = YES;
 				MARKETING_VERSION = 2.5.4;
-				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHB;
+				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHW;
 				PRODUCT_NAME = SmartBIMS;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "smartBIMSHW DEV";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartBIMS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

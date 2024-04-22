@@ -12,8 +12,7 @@
 
 
 #if TARGET==DEV
-    //NSString const *BLOOD_SERVER = @"mbims.bloodinfo.net:59999";
-    NSString const *BLOOD_SERVER = @"158.247.249.169:8080/smart_bims";
+    NSString const *BLOOD_SERVER = @"mbims.bloodinfo.net:59999";
     NSString const *SERVER_TARGET = @"/mbims/testservice";
 #endif
 

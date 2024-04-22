@@ -317,9 +317,11 @@
 
 - (void)iosBridge_userInfo {
     NSString* tempVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-   
+    
+    // 앱 버전 전달
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc]init];
     [dictionary setValue:[NSString stringWithFormat:@"%@", tempVersion] forKey:@"version"];
+    
     [dictionary setValue:[NSString stringWithFormat:@"%@", self.m_SBUserInfoVO.szBimsId] forKey:@"bims_id"];
     [dictionary setValue:[NSString stringWithFormat:@"%@", self.m_SBUserInfoVO.szBimsName] forKey:@"bims_name"];
     [dictionary setValue:[NSString stringWithFormat:@"%@", self.m_SBUserInfoVO.szBimsPwd] forKey:@"bims_pwd"];

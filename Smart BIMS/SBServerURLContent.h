@@ -13,8 +13,42 @@
 // 개발 DB 접근 시 TARGET을 DEV로 설정
 // 상용 DB 접근 시 TARGET을 PROD로 설정
 // DEV : 개발, PROD : 상용
-#define TARGET LOCAL
+#define TARGET DEV
 
+#if TARGET==DEV
+
+// 로그인 처리 URL => [ SBLoginViewController.m ]
+#define URL_IDPW_LOGIN [NSString stringWithFormat:@"%@%@%@%@", @"http://", BLOOD_SERVER, SERVER_TARGET, @"/SBLoginProc.jsp"]
+
+// 디바이스인증화면 → [ SBDeviceConfirmViewController.m ]
+#define URL_DEVICE_CONFIRM [NSString stringWithFormat:@"%@%@%@%@", @"http://", BLOOD_SERVER, SERVER_TARGET, @"/SBDeviceConfirmService.jsp"]
+
+// 메인 UI URL => [ SBWebViewController.m ]
+#define URL_MAIN_PAGE [NSString stringWithFormat:@"%@%@%@", @"http://", BLOOD_SERVER, @"/mbims/sbview/sbmain/sbmain01.jsp"]
+
+// 메인 UI URL => [ SBWebViewController.m ]
+#define URL_MAIN_MGR [NSString stringWithFormat:@"%@%@%@", @"http://", BLOOD_SERVER, @"/mbims/sbview/sbmain/sbmainMgr.jsp"]
+
+#endif
+
+#if TARGET==PROD
+
+// 로그인 처리 URL => [ SBLoginViewController.m ]
+#define URL_IDPW_LOGIN [NSString stringWithFormat:@"%@%@%@%@", @"http://", BLOOD_SERVER, SERVER_TARGET, @"/SBLoginProc.jsp"]
+
+// 디바이스인증화면 → [ SBDeviceConfirmViewController.m ]
+#define URL_DEVICE_CONFIRM [NSString stringWithFormat:@"%@%@%@%@", @"http://", BLOOD_SERVER, SERVER_TARGET, @"/SBDeviceConfirmService.jsp"]
+
+// 메인 UI URL => [ SBWebViewController.m ]
+#define URL_MAIN_PAGE [NSString stringWithFormat:@"%@%@%@", @"http://", BLOOD_SERVER, @"/mbims/sbview/sbmain/sbmain01.jsp"]
+
+// 메인 UI URL => [ SBWebViewController.m ]
+#define URL_MAIN_MGR [NSString stringWithFormat:@"%@%@%@", @"http://", BLOOD_SERVER, @"/mbims/sbview/sbmain/sbmainMgr.jsp"]
+
+#endif
+
+#if TARGET==LOCAL
+    
 // 로그인 처리 URL => [ SBLoginViewController.m ]
 #define URL_IDPW_LOGIN [NSString stringWithFormat:@"%@%@%@%@", @"http://", BLOOD_SERVER, SERVER_TARGET, @"/SBLoginProc.jsp"]
 
@@ -26,6 +60,10 @@
 
 // 메인 UI URL => [ SBWebViewController.m ]
 #define URL_MAIN_MGR [NSString stringWithFormat:@"%@%@%@", @"http://", BLOOD_SERVER, @"/sbview/sbmain/sbmainMgr.jsp"]
+
+#endif
+
+
 
 @interface SBServerURLContent : NSObject
 
