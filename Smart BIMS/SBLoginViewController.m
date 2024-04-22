@@ -170,7 +170,7 @@
         NSString* tempVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
         NSString* strDeptCode = (NSString*)[dictionary valueForKey:@"bims_deptcode"];
         
-        // 버전체크.
+        // 버전체크. -
         if([strVersion isEqualToString:tempVersion] == NO){
             
             NSString* strMsg = [NSString stringWithFormat:@"Smart BIMS가 버전 [%@]로 업데이트되었습니다.\n현재 사용 중이신 버전은 [%@]입니다.\nMDM 계정(아이디)를 확인하신 후 혈액정보팀으로 업그레이드를 요청하세요.", strVersion, tempVersion];
