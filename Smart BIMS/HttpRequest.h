@@ -15,6 +15,12 @@
 	NSString* m_result;
 	id m_target;
 	SEL m_selector;
+    
+    /*
+    UIViewController *connetView;
+    UIView *overlayView;
+    UIActivityIndicatorView* loadingIndicator;
+    */
 }
 
 @property (nonatomic, retain) NSMutableData* m_receivedData;
@@ -22,6 +28,12 @@
 @property (nonatomic, assign) NSString* m_result;
 @property (nonatomic, assign) id m_target;
 @property (nonatomic, assign) SEL m_selector;
+
+/*
+@property (nonatomic, assign) UIViewController *connetView;
+@property (nonatomic, assign) UIView *overlayView;
+@property (nonatomic, assign) UIActivityIndicatorView* loadingIndicator;
+*/
 
 - (BOOL) requestURL:(NSString*)url bodyObject:(NSDictionary*)bodyObject;
 - (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response;

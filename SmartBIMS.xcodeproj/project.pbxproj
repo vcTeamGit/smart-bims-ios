@@ -61,6 +61,7 @@
 		39CADF6A2A135D8B002EC079 /* finger.png in Resources */ = {isa = PBXBuildFile; fileRef = 39CADF692A135D8B002EC079 /* finger.png */; };
 		453040B724A43DFE00D2E22E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929954141441C16B00CAF352 /* AudioToolbox.framework */; };
 		610C8C5E272153C9006BA492 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 610C8C5D272153C9006BA492 /* InfoPlist.strings */; };
+		6EEFFC132D1459AA00587ACF /* libmVaccine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEFFC122D14597500587ACF /* libmVaccine.a */; };
 		880F48FF283B248A00968A57 /* action_collector_reg.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F48FE283B248900968A57 /* action_collector_reg.png */; };
 		88A84CFB28220092003EEE84 /* SBServerURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A84CFA28220092003EEE84 /* SBServerURLContent.m */; };
 		88DC6E922836118900D2E0A4 /* SBTakeOverInfoVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DC6E912836118900D2E0A4 /* SBTakeOverInfoVO.m */; };
@@ -437,6 +438,8 @@
 		39CADF692A135D8B002EC079 /* finger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finger.png; sourceTree = "<group>"; };
 		57D0B5F626831F3000FF7ACA /* SmartBIMS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartBIMS-Bridging-Header.h"; sourceTree = "<group>"; };
 		610C8C5D272153C9006BA492 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		6ED33C732D0BB6C000D971D8 /* ffc8943a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffc8943a.h; sourceTree = "<group>"; };
+		6EEFFC122D14597500587ACF /* libmVaccine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmVaccine.a; path = ../../libmVaccine.a; sourceTree = "<group>"; };
 		880F48FE283B248900968A57 /* action_collector_reg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = action_collector_reg.png; sourceTree = "<group>"; };
 		88A84CF928220006003EEE84 /* SBServerURLContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBServerURLContent.h; sourceTree = "<group>"; };
 		88A84CFA28220092003EEE84 /* SBServerURLContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBServerURLContent.m; sourceTree = "<group>"; };
@@ -787,6 +790,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39895F032A7FF6DF00B0DF2C /* WebKit.framework in Frameworks */,
+				6EEFFC132D1459AA00587ACF /* libmVaccine.a in Frameworks */,
 				920D5E8A1548EC6C009ED883 /* MediaPlayer.framework in Frameworks */,
 				920D5E881548EC2F009ED883 /* MobileCoreServices.framework in Frameworks */,
 				92435ED413EA231900ABADB9 /* UIKit.framework in Frameworks */,
@@ -857,9 +861,18 @@
 			name = main;
 			sourceTree = "<group>";
 		};
+		6ED33C722D0BB69800D971D8 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				6ED33C732D0BB6C000D971D8 /* ffc8943a.h */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
 		92435EC413EA231900ABADB9 = {
 			isa = PBXGroup;
 			children = (
+				6ED33C722D0BB69800D971D8 /* module */,
 				39CADF6529F264F1002EC079 /* Launch Screen.storyboard */,
 				57D0B5F626831F3000FF7ACA /* SmartBIMS-Bridging-Header.h */,
 				92EF5CC018FD16F8006DEB8E /* Images.xcassets */,
@@ -893,6 +906,7 @@
 		92435ED213EA231900ABADB9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6EEFFC122D14597500587ACF /* libmVaccine.a */,
 				39895F022A7FF6DE00B0DF2C /* WebKit.framework */,
 				929954141441C16B00CAF352 /* AudioToolbox.framework */,
 				92435ED313EA231900ABADB9 /* UIKit.framework */,
@@ -1395,7 +1409,7 @@
 				TargetAttributes = {
 					92435ECE13EA231900ABADB9 = {
 						LastSwiftMigration = 1200;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1886,17 +1900,20 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.5.4;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8MJ5VDG926;
+				DEVELOPMENT_TEAM = 8MJ5VDG926;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smart BIMS/SmartBIMS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Smart BIMS/SmartBIMS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/CloudStorage/OneDrive-피씨엔/BC_LKS/2_PROJECT_ING/혈액정보소프트웨어유지보수/2024-2026_혈액정보소프트웨어/사업진행/4_SmartBIMS/백신적용_20241210/라온시큐어\\ 모바일\\ 백신\\ 파일/mVaccnie_폐쇄망/TouchEn\\ mVaccine\\ CS\\ iOS\\ v2.1.0.9/01.\\ Module/iOS/lib",
+				);
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = YES;
 				MARKETING_VERSION = 2.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHW;
@@ -1904,7 +1921,6 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "smartBIMSHW DEV";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartBIMS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1921,17 +1937,20 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.5.4;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8MJ5VDG926;
+				DEVELOPMENT_TEAM = 8MJ5VDG926;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smart BIMS/SmartBIMS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Smart BIMS/SmartBIMS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/CloudStorage/OneDrive-피씨엔/BC_LKS/2_PROJECT_ING/혈액정보소프트웨어유지보수/2024-2026_혈액정보소프트웨어/사업진행/4_SmartBIMS/백신적용_20241210/라온시큐어\\ 모바일\\ 백신\\ 파일/mVaccnie_폐쇄망/TouchEn\\ mVaccine\\ CS\\ iOS\\ v2.1.0.9/01.\\ Module/iOS/lib",
+				);
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = YES;
 				MARKETING_VERSION = 2.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHW;
@@ -1939,7 +1958,6 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "smartBIMSHW DEV";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartBIMS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1980,17 +1998,20 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.5.4;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8MJ5VDG926;
+				DEVELOPMENT_TEAM = 8MJ5VDG926;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smart BIMS/SmartBIMS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Smart BIMS/SmartBIMS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/CloudStorage/OneDrive-피씨엔/BC_LKS/2_PROJECT_ING/혈액정보소프트웨어유지보수/2024-2026_혈액정보소프트웨어/사업진행/4_SmartBIMS/백신적용_20241210/라온시큐어\\ 모바일\\ 백신\\ 파일/mVaccnie_폐쇄망/TouchEn\\ mVaccine\\ CS\\ iOS\\ v2.1.0.9/01.\\ Module/iOS/lib",
+				);
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = YES;
 				MARKETING_VERSION = 2.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = net.bloodinfo.SmartBIMSHW;
@@ -1998,7 +2019,6 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "smartBIMSHW DEV";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartBIMS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

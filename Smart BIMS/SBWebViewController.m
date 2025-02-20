@@ -119,7 +119,7 @@
     // MARK: [디바이스 화면 사이즈 확인]
     
     // [뷰 컨트롤러 배경 색상 지정]
-    [self.view setBackgroundColor: [UIColor whiteColor]];
+    [self.view setBackgroundColor: [UIColor colorWithRed:0.40 green:0.60 blue:0.85 alpha:1.0]];
     
     // [디바이스 전체 height 값 확인 실시]
     double deviceHeight = self.view.frame.size.height;

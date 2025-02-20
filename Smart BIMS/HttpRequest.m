@@ -67,7 +67,22 @@
 {
 	// 데이터를 전송받기 전에 호출되는 메서드, 우선 Response의 헤더만을 먼저 받아 온다.
     //[receivedData setLength:0];
-	self.m_response = response;
+    
+    /* 동작 안함
+    overlayView = [[UIView alloc] init];
+    overlayView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+    overlayView.frame = connetView.view.frame;
+    CGRect isFrame = overlayView.frame;
+    
+    //loadingIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    loadingIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [loadingIndicator setCenter:CGPointMake(isFrame.size.width/2, isFrame.size.height/2)];
+    [overlayView addSubview:loadingIndicator];
+    [loadingIndicator startAnimating];
+    [connetView.view addSubview:overlayView];
+    */
+    
+    self.m_response = response;
 }
 
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
@@ -79,6 +94,10 @@
 - (void) connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	// 데이터 전송이 끝났을 때 호출되는 메서드, 전송받은 데이터를 NSString형태로 변환한다.
+    
+    // 동작 안함 
+    //[loadingIndicator stopAnimating];
+    
     if(m_result != nil){
         TRACE(@"HttpRequest m_result will released");
         [m_result release];

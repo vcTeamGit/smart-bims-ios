@@ -50,7 +50,7 @@
 @property (nonatomic, retain) IBOutlet UITextField* m_textFieldPassword;
 @property (nonatomic, retain) IBOutlet UIButton* m_loginButton;
 
-@property (nonatomic, retain) IBOutlet UIActivityIndicatorView* m_activityIndicatorView;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView* m_activityIndicatorView;
 
 @property (nonatomic, retain) HttpRequest* m_httpRequest;
 
@@ -66,6 +66,7 @@
 
 - (IBAction)loginButtonPressed:(id)sender;
 
+- (void)addLoadingIndicatorToView;
 - (void)stopActivityIndicatorView;
 
 - (IBAction)backgroundTab:(id)sender;

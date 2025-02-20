@@ -18,6 +18,8 @@
 
 #import "Smart_BIMSAppDelegate.h"
 
+#import "ffc8943a.h"
+
 @implementation SBLoginViewController
 
 @synthesize m_textFieldId;
@@ -50,8 +52,43 @@
     return ret;
 }
 
+/* ADD : 2025.02.06 PCN LKS 로딩바 색상 및 사이즈 변경 */
+-(void)addLoadingIndicatorToView
+{
+    m_activityIndicatorView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    m_activityIndicatorView.transform = CGAffineTransformMakeScale(2, 2);
+    [m_activityIndicatorView setCenter:CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)];
+    [self.view addSubview: m_activityIndicatorView];
+}
+
 - (IBAction)loginButtonPressed:(id)sender
 {
+    /* 라온시큐어 정상 적용 테스트
+    B8b18943_aa0tB();
+    if(tk_a0etB8aace8det) { // 해당 변수에 탐지 결과 자동 기입
+        // Self JailBreak Check – 탈옥체크 후 앱자동 종료
+        [e8db18ftfc0etB8a setJbmg:@"탈옥체크결과"];
+        [e8db18ftfc0etB8a setJbt:@"탈옥된 폰입니다."];
+        f9aabep843a([e8db18ftfc0etB8a setDisplayReplay]);
+    } else {
+        UIAlertController* alert = [UIAlertController
+                        alertControllerWithTitle:@"탈옥체크결과"
+                                         message:@"탈옥된 폰이 아닙니다."
+                                  preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* yesButton = [UIAlertAction
+                            actionWithTitle:@"확인"
+                                      style:UIAlertActionStyleDefault
+                                    handler:^(UIAlertAction * action) {
+                                        //Handle your yes please button action here
+                                    }];
+        [alert addAction:yesButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+        return;
+    }
+    */
+    
     NSString* strId = m_textFieldId.text;
     NSString* strPassword = [self sha256HashForText:m_textFieldPassword.text];
     
@@ -666,6 +703,16 @@
         self.m_textFieldPassword.text = @"P@ssw0rd!";
     #endif
     
+    B8b18943_aa0tB();
+    
+    if(tk_a0etB8aace8det) { // 해당 변수에 탐지 결과 자동 기입
+        // Self JailBreak Check – 탈옥체크 후 앱자동 종료
+        [e8db18ftfc0etB8a setJbmg:@"탈옥체크결과"];
+        [e8db18ftfc0etB8a setJbt:@"탈옥된 폰입니다."];
+        f9aabep843a([e8db18ftfc0etB8a setDisplayReplay]);
+    }
+   
+    
     // Do any additional setup after loading the view from its nib.
     Smart_BIMSAppDelegate* delegate = [[UIApplication sharedApplication] delegate];
     viewWidth = [delegate.g_viewWidth intValue];
@@ -691,6 +738,7 @@
         [self keepSignIn];
     }
     
+    [self addLoadingIndicatorToView];
 }
 
 - (void)viewDidUnload
